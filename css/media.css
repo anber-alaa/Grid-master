@@ -1,0 +1,164 @@
+@media screen and (max-width:640) {}
+
+@media screen and (min-width:7) {}
+
+@media screen and (min-width:1024px) {
+    h3 {
+        font-family: var(--defult-font);
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto 250px;
+        grid-template-areas:
+            "phone phone intro intro"
+            "brand imac imac icloud"
+            "game lap lap icloud"
+            "bird white-div black-div black-div";
+    }
+
+    /* phone section */
+    .phone {
+        grid-area: phone;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 22px;
+        font-family: var(--defult-font);
+        font-size: .875rem;
+        line-height: 1.625rem;
+    }
+    .phone-image{
+        margin-top: 40px;
+    }
+    .phone .content {
+        align-self: center;
+        width: 170px;
+    }
+
+    .content h3 {
+        font-size: 1.375rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    /* end phone section */
+    /* intro start */
+    .intro {
+        /* padding-top: 40px; */
+        padding: 0;
+        grid-area: intro;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-weight: 400;
+        line-height: 3.75rem;
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* intro end */
+    .brand {
+        grid-area: brand;
+    }
+
+    /* imac */
+    .imac {
+        grid-area: imac;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 68px 22px 0px;
+    }
+
+    .imac .content {
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 0px;
+    }
+    .imac .content h3{
+        font-family: var(--main-font);
+    }
+    .content .imac-image {
+        margin-top: 20px;
+        width: 450px;
+        position: relative;
+        left: -288px;
+    }
+
+    .text {
+        width: 50%;
+        line-height: 1.625rem;
+    }
+
+    /* imac end */
+    .icloud {
+        grid-area: icloud;
+    }
+
+    .game {
+        grid-area: game;
+    }
+/* lap section start */
+    .lap{
+        grid-area: lap;
+    }
+    .lap .image .laptop{
+        width: 400px;
+        margin: auto;
+        position: relative;
+        right: 50px;
+        left: -50px;
+        z-index: 1;
+    }
+    .lap .image .ux{
+        width: 400px;
+        position: absolute;
+        top: 150px;
+        left: 130px;
+        margin: auto;
+    }
+
+
+/* lap section end */
+    .bird {
+        grid-area: bird;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .white-div {
+        grid-area: white-div;
+    }
+/* black-div section */
+    .black-div {
+        grid-area: black-div;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 0px;
+    }
+    .black-div .image{
+        width: 270px;
+        position: relative;
+        left: -60px;
+    }
+    .black-div .h3{
+        font-family: var(--main-font);
+        font-size: 1.375rem;
+        font-weight: 400;
+        line-height: 2rem;
+        margin: 10px 0px 20px;
+    }
+}

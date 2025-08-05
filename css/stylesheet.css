@@ -1,0 +1,395 @@
+/* Golobal elements */
+* ,*::after ,*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Arvo", sans-serif;
+}
+img{
+    width: 100%;
+    display: block;
+}
+a:not(.intro a){
+    text-decoration: none;
+    font-size: .75rem;
+    font-family: var(--defult-font);
+    font-weight: 700;
+    line-height: 1.625rem;
+    margin-top:20px;
+    letter-spacing: .15rem;
+}
+/* root */
+:root{
+    --main-font: "Arvo", sans-serif;
+    --secondry-font:"Montserrat", serif;
+    --background-color:rgb(247, 248, 249);
+    --heading-color:rgb(51, 51, 51);
+    --gray-text:rgb(159, 163, 167);
+    --anchor-color:rgb(39, 185, 194);
+    --defult-font:"Open Sans", sans-serif;
+}
+/* end root */
+/* *intro section* */
+.intro{
+    background-color: var(--background-color);
+    padding: 40px 0px;
+    text-align: center;
+}
+.title{
+    font-family: var(--secondry-font);
+    font-weight: 700;
+    font-size: .75rem;
+    letter-spacing: .125rem;
+    line-height: 1.25rem;
+    color: var(--gray-text);
+}
+h1{
+    font-family: var(--main-font);
+    font-weight: 400;
+    line-height: 3.75rem;
+    font-size: 2.4375rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 390px;
+    max-width: 550px;
+}
+.intro a{
+    color: var(--anchor-color);
+}
+/* end intro */
+
+
+
+/* *phone section* */
+.phone{
+    /* background-color: rgb(56, 20, 90); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px 0px;
+    font-family: var(--defult-font);
+    font-size: .875rem;
+    line-height: 1.625rem;
+}
+.phone .content{
+    width: 300px;
+    align-self: start;
+}
+.content h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.gray-text{
+    color: var(--gray-text);
+}
+.phone-image{
+    margin: 40px auto 0px;
+    width: 250px;
+    position: relative;
+    left: -10px;
+    right: 10px;
+}
+
+/* phone section end */
+.brand{
+    background-color: rgb(240, 86, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+.brand .image{
+    width: 300px;
+}
+.brand h3{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 22px;
+    line-height: 32px;
+}
+.brand a{
+    color: rgb(255, 200, 10);
+    font-size: 12px;
+    font-family: var(--defult-font);
+    font-weight: 700;
+    line-height: 26px;
+    margin-top:20px;
+}
+/* brand section end */
+
+/* game section*/
+.game{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+.game .image{
+    width: 250px;
+    position: relative;
+    left: -20px;
+}
+.game h3{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.game a{
+    color: var(--anchor-color);
+}
+/* game section end */
+
+/* imac section */
+.imac{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 16px 50px;
+}
+.imac .content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.content .imac-image{
+    margin-top: 40px;
+    width: 700px;
+    position: relative;
+    left: -400px;
+}
+.text{
+    width: 100%;
+    line-height: 1.625rem;
+}
+.imac a{
+    margin-top: 20px;
+    color: var(--anchor-color);
+}
+/* imac section end */
+.bird{
+    background-color: rgb(56, 213, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bird .twitter{
+    background-color: rgb(53, 207, 237);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.twitter-icon{
+    width: 20%;
+}
+.twitter h3{
+    color: white;
+    text-align: center;
+    margin: 10px 0px 20px;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+/* twitter end */
+
+/* lap section start */
+.lap{
+    background-color: rgb(147, 182, 183);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+}
+.lap-title{
+    color:white;
+    padding: 31px 0px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2rem;
+    z-index: 555;
+}
+.lap .popular{
+    background-color: rgb(250, 104, 79);
+    color: white;
+    font-size: .5rem;
+    font-weight: 700;
+    letter-spacing: .125rem;
+    line-height: 1.25rem;
+    position: absolute;
+    left: 30px;
+    top:20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+} 
+.lap .image .laptop{
+    width: 300px;
+    margin: auto;
+    position: relative;
+    right: 50px;
+    left: -50px;
+    z-index: 1;
+}
+.lap .image .ux{
+    width: 300px;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    margin: auto;
+}
+/* icloud */
+.icloud{
+    background-color: rgb(143, 118, 188);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px 20px 70px;
+}
+.circle{
+    background-color: rgb(129, 102, 176);
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circle .image{
+    width: 60%;
+    margin-top: 20px;
+    position: relative;
+    left: -8px;
+    right: 8px;
+}
+.circle .popular{
+    background-color: rgba(255, 255, 255, 0.08);
+    font-family: var(--defult-font);
+    display: flex;
+    padding: 2px 13px 1px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.circle .popular img{
+    width: 15px;
+    height: 15px;
+}
+.circle .popular .popular-content {
+    margin-left: 10px;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    line-height: 1.4375rem;
+}
+.circle .title{
+    color: white;
+}
+.icloud .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icloud .content h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+.icloud .content p{
+    font-family: var(--defult-font);
+    font-size: .875rem;
+    line-height: 1.625rem;
+    width: 280px;
+    max-width: 290px;
+    text-align: center;
+}
+button{
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    line-height: 1.625rem;
+    font-family: var(--defult-font);
+    background-color: rgb(255, 200, 10);
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    padding: 14px 28px;
+    text-align: center;
+}
+/* white-div section  */
+.white-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+.white-div h3{
+    font-family: var(--main-font);
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 270px;
+}
+.white-div .popular{
+    background-color: rgb(123, 196, 36);
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: .5rem;
+    font-weight: 700;
+    letter-spacing: .125rem;
+    line-height: 1.25rem;
+    color: white;
+}
+/* white-div section end */
+.black-div{
+    background-color: rgb(44, 44, 44);
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 40px 40px;
+}
+.black-div .image{
+    width: 270px;
+    position: relative;
+    left: -60px;
+}
+.black-div .h3{
+    font-family: var(--main-font);
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 10px 0px 20px;
+}
